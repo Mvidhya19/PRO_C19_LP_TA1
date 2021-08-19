@@ -41,7 +41,7 @@ function draw(){
     }
     
     if(keyDown("space")){
-      ghost.velocityY = -10;
+      ghost.velocityY = -8;
     }
     
     ghost.velocityY = ghost.velocityY + 0.8
@@ -75,7 +75,7 @@ function draw(){
 
 function spawnDoors() {
   //write code here to spawn the doors in the tower
-  if (frameCount % 240 === 0) {
+  if (frameCount % 100 === 0) {
     var door = createSprite(200, -50);
     var climber = createSprite(200,10);
     var invisibleBlock = createSprite(200,15);
